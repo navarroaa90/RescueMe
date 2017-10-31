@@ -10,10 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171029000803) do
+ActiveRecord::Schema.define(version: 20171031174622) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "pets", force: :cascade do |t|
+    t.string "pet_name"
+    t.string "breed"
+    t.string "gender"
+    t.integer "age"
+    t.integer "weight"
+    t.string "personality"
+    t.string "info"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_pets_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
@@ -28,4 +46,5 @@ ActiveRecord::Schema.define(version: 20171029000803) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "pets", "users"
 end

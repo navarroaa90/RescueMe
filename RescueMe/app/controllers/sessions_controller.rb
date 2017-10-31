@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
        #flahs.now is used for messaging
        #during the CURRENT request
        flash.now.alert = 'Invalid login credentials - try again!'
-       render new
+       render :new
    end
 end
    def destroy

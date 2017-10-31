@@ -1,0 +1,38 @@
+<h1> Add Pet for Adoption!</h2>
+
+<%= form_for @pet,  html: { multipart: true } do |f| %>
+   <div>
+    <%= f.label :pet_name %>
+    <%= f.text_field :pet_name %>
+  </div>
+    <div>
+    <%= f.label :breed %>
+    <%= f.text_field :breed %>
+  </div>
+  <div>
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+  <div>
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+  <div>
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
+  </div>
+  <div>
+    <%= f.label :personality %>
+    <%= f.text_field :personality %>
+  </div>
+  <div>
+    <%= f.label :info %>
+    <%= f.text_field :info %>
+  </div>
+  <div>
+<%= f.file_field :image %>
+  </div>
+  <%= f.submit "Create Adoption" %>
+<% end %>
+
+<%= link_to "Back to the list!", pets_path %>
