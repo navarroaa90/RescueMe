@@ -3,8 +3,9 @@ Rails.application.routes.draw do
 root 'welcomes#index'
 
 resources :users, only: [:new, :create, :destroy]
-resources :pets
 resources :sessions, only: [:new, :create, :destroy]
-
 get '/login', to: 'sessions#new'
+resources :pets, shallow: true do
+resources :comments, only: [:create, :destroy]
+  end
 end

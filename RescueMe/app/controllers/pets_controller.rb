@@ -1,10 +1,14 @@
 class PetsController < ApplicationController
+    before_action :authorize
+   
+    
     def index
         @pets = Pet.all
     end
 
     def show
         @pet = Pet.find(params[:id])
+        @comment = Comment.new
     end
     
     def new
@@ -12,6 +16,8 @@ class PetsController < ApplicationController
     end
 
     def edit
+        @pet = Pet.find(params[:id])
+      
 
     end
 
@@ -22,6 +28,15 @@ class PetsController < ApplicationController
             redirect_to pets_path(@pet)
         else
             render :new
+        end
+    end
+    
+    def update 
+        @pet = Pet.find(params[:id])
+        if @pet.update_attributes(pet_params)
+          redirect_to pet_path
+        else
+          render 'edit'
         end
     end
 
@@ -36,6 +51,6 @@ class PetsController < ApplicationController
         
             #strong params
             def pet_params
-                params.require(:pet).permit(:pet_name, :gender, :age, :weight, :image, :personality, :info)
+                params.require(:pet).permit(:pet_name, :gender, :age, :weight, :image, :personality, :info, :breed)
             end
     end

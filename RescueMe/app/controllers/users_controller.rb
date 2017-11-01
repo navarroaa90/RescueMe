@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-    def new
+    before_action :user, only:[:edit, :update, :delete]
+     def new
         @user = User.new
 end
 
@@ -8,7 +9,7 @@ def create
     if @user.save
         session[:user_id] = @user.id
         flash[:notice] = "Thanks for signing up! Lets give these pets a new home!"
-        redirect_to root_path
+        redirect_to pets_path
     else
         render :new
     end

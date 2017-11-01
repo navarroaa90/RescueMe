@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
    if user && user.authenticate(params[:password])
        #sucessful log in
        session[:user_id] = user.id
-       redirect_to root_path, notice: 'Logged in!'
+       redirect_to pets_path, notice: 'Logged in!'
    else
        #flahs.now is used for messaging
        #during the CURRENT request
