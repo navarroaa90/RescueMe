@@ -13,29 +13,76 @@
  *= require_tree .
  *= require_self
  */
-
- h1 {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.192);
- }
-body {
-    background: white;
+#rescue {
+    text-align: left;
+  }
+ 
+  h1 {
+      color: rgb(219, 13, 13);
+      font-family: 'Courgette', cursive;
+      
+  }
+  img {
+      border: 2px solid black;
+  }
+#line {
+    height: 2px;
+    background-color: black;
 }
-
+body, html {
+    margin: 0;
+    height: 100%;
+}
+.bg {
+    background-image: url("https://wallpaperscraft.com/image/labrador_retriever_foliage_autumn_dog_pumpkin_puppy_31714_2048x1152.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+#comments, #commentbtn {
+text-align: left;
+}
+.comments{
+    text-align: left;
+}
 .container {
-  
-   background: rgba(248, 245, 245, 0.37);
+  background: rgba(248, 245, 245, 0.096);
   text-align: center;
-
+  border: 1px solid black;
 }
-
-.pic1, .pic2, .pic3, .pic4 {
+.pic{
     border: 1px solid black;
     display: inline-block;
     margin: 0 auto;
     padding: 18px;
 }
-
-.navigation {
+.navigation{
+    border-radius: 0px;
+    height: 70px;
+    color: white;
     text-align: right;
+    border: 2px solid black;
+    background: black;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+#login{
+    text-align: center;
+}
+#loginbtn{
+    text-align: center;
+    color: green;
+}
+#loginpage {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#logo {
+    color: white;
+}
+.logo {
+    text-align: left;
+    font-family: 'Courgette', cursive;
 }

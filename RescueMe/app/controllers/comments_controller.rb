@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     def destroy
         comment = Comment.find(params[:id])
         pet = comment.pet
-        @comment.destroy
+        comment.destroy
         redirect_to pet_path(pet)
     end
     private

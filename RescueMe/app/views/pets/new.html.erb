@@ -1,38 +1,54 @@
-<h1> Add Pet for Adoption!</h2>
-
+<div ="container-fluid">
+<h1> Add Pet for Adoption!</h1>
+</div>
 <%= form_for @pet,  html: { multipart: true } do |f| %>
-   <div>
-    <%= f.label :pet_name %>
-    <%= f.text_field :pet_name %>
+  <div class = "container-fluid">
+  <div class="form-group">
+      <%= f.label :pet_name, "Name", class: "col-md-4 control-lable" %>
+      <%= f.text_field :pet_name, class: "form-control"%>
+      </div>
+    </div>
+    <div class = "container-fluid">
+    <div class="form-group">
+       <%= f.label :breed, "Breed", class: "col-md-4 control-lable" %>
+      <%= f.text_field :breed, class: "form-control" %>
+    </div>
   </div>
-    <div>
-    <%= f.label :breed %>
-    <%= f.text_field :breed %>
+  <div class = "container-fluid">
+  <div class="form-group">
+      <%= f.label :gender, "Gender", class: "col-md-4 control-lable"%>
+      <%= f.text_field :gender, class: "form-control" %>
+    </div>
   </div>
-  <div>
-    <%= f.label :gender %>
-    <%= f.text_field :gender %>
+  <div class = "container-fluid">
+  <div class="form-group">
+     <%= f.label :age , "Age", class: "col-md-4 control-lable"%>
+     <%= f.text_field :age, class: "form-control" %>
+    </div>
   </div>
-  <div>
-    <%= f.label :age %>
-    <%= f.text_field :age %>
+  <div class = "container-fluid">
+  <div class="form-group">
+     <%= f.label :weight, "Weight", class: "col-md-4 control-lable"%>
+     <%= f.text_field :weight, class: "form-control" %>
+    </div>
   </div>
-  <div>
-    <%= f.label :weight %>
-    <%= f.text_field :weight %>
+  <div class = "container-fluid">
+  <div class="form-group">
+      <%= f.label :personality, "Personality", class: "col-md-4 control-lable" %>
+     <%= f.text_field :personality, class: "form-control" %>
+    </div>
   </div>
-  <div>
-    <%= f.label :personality %>
-    <%= f.text_field :personality %>
+  <div class = "container-fluid">
+  <div class="form-group">
+    <%= f.label :info , " Location and Contact Information", class: "col-md-4 control-lable"  %>
+    <%= f.text_field :info, class: "form-control"%>
+    </div>
   </div>
-  <div>
-    <%= f.label :info %>
-    <%= f.text_field :info %>
-  </div>
-  <div>
+  <div class="form-group">
 <%= f.file_field :image %>
   </div>
-  <%= f.submit "Create Adoption" %>
+  <%= f.submit "Create Adoption", class: "btn btn-default btn-primary" %>
 <% end %>
-
+<br>
 <%= link_to "Back to the list!", pets_path %>
+</div>

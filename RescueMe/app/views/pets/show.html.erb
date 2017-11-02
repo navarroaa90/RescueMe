@@ -1,13 +1,19 @@
-<div class= "container-fluid">
+<div id= "show" class= "container">
 <h1> <%= @pet.pet_name %> </h1>
-<div class= "image">
-<%= image_tag @pet.image.url %>
 </div>
-<p> Breed: <%= @pet.breed%> <br> Gender: <%= @pet.gender %><br> Age:<%= @pet.age %>years<br> 
-Weight: <%= @pet.weight %>lbs </p> 
-<p> personality:<%= @pet.personality %> </p>
-<p> contact and location information: <%= @pet.info %> </p>
-<div>
+<div id="line" class="container">
+</div>
+<br>
+<br>
+<div class="container" >
+    <div class= "image">
+    <%= image_tag @pet.image.url %>
+    </div>
+    <p> Breed: <%= @pet.breed%> <br> Gender: <%= @pet.gender %><br> Age:<%= @pet.age %>years<br> 
+    Weight: <%= @pet.weight %>lbs </p> 
+        <p> personality:<%= @pet.personality %> </p>
+        <p> contact and location information: <%= @pet.info %> </p>
+    <div>
 <%= link_to 'Edit', edit_pet_path(@pet) if @pet.user == current_user %> 
 &nbsp;&nbsp;|&nbsp;&nbsp;
 <%= link_to "Delete", pet_path(@pet), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} if @pet.user == current_user%>
@@ -15,13 +21,14 @@ Weight: <%= @pet.weight %>lbs </p>
 <%= link_to "Back to the list!", pets_path %>
 </div>
 <%= form_for [@pet, @comment] do |f| %>
- <div class="field">
+ <div id="comments"class="field">
     <%= f.label :comments %>
     <%= f.text_field :remark %>
     </div>
-      <div class="actions"><%= f.submit %></div>
+      <div id="commentbtn" class="actions"><%= f.submit %></div>
       
 <% end %>
+<div class="comments">
 <ul>
     <% @pet.comments.each do |comment| %>
         <li>
@@ -31,5 +38,7 @@ Weight: <%= @pet.weight %>lbs </p>
     <% end %>
 
 </ul>
+</div>
 
+    </div>
 </div>
