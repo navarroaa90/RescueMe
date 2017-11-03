@@ -1,6 +1,7 @@
-<h1>Sign Up</h1>
-<%= form_for @user, html: { multipart: true } do |f| %>
-  <% if @user.errors.any? %>
+<div class="container">
+  <h1>Sign Up</h1>
+  <%= form_for @user, html: { multipart: true } do |f| %>
+    <% if @user.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>
       <ul>
@@ -11,25 +12,26 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :first_name %>
+    <%= f.label :first_name %> <br>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :last_name %>
+    <%= f.label :last_name %> <br>
     <%= f.text_field :last_name %>
   </div>
-  <div class="field">
-    <%= f.label :email %>
+  <div class="field"> 
+    <%= f.label :email %> <br>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :password %> <br>
     <%= f.password_field :password %>
   </div>
   <div class="field">
-    <%= f.label :password_confirmation %>
+    <%= f.label :password_confirmation %> <br>
     <%= f.password_field :password_confirmation %>
-    </div>
+    </div> <br>
   
   <div class="actions"><%= f.submit %></div>
 <% end %>
+</div>

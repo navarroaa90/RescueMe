@@ -1,3 +1,4 @@
+
 <div id= "show" class= "container">
 <h1> <%= @pet.pet_name %> </h1>
 </div>
@@ -6,13 +7,18 @@
 <br>
 <br>
 <div class="container" >
-    <div class= "image">
-    <%= image_tag @pet.image.url %>
+    <div class= "petimage">
+    <div class = "resize">
+    <%= image_tag @pet.image.url, id: 'image_id' %>
     </div>
-    <p> Breed: <%= @pet.breed%> <br> Gender: <%= @pet.gender %><br> Age:<%= @pet.age %>years<br> 
-    Weight: <%= @pet.weight %>lbs </p> 
-        <p> personality:<%= @pet.personality %> </p>
-        <p> contact and location information: <%= @pet.info %> </p>
+    </div>
+    
+    <div class= "petinfo">
+    <p> <strong>Breed:</strong> <%= @pet.breed%> <br> <strong>Gender:</strong> <%= @pet.gender %><br> <strong>Age:</strong> <%= @pet.age %> years<br> 
+    <strong>Weight:</strong> <%= @pet.weight %>lbs </p> 
+        <p> <strong>personality:</strong> <%= @pet.personality %> </p>
+        <p> <strong>contact and location information:</strong> <%= @pet.info %> </p>
+        </div>
     <div>
 <%= link_to 'Edit', edit_pet_path(@pet) if @pet.user == current_user %> 
 &nbsp;&nbsp;|&nbsp;&nbsp;

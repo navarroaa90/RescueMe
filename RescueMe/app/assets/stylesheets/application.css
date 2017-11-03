@@ -14,17 +14,19 @@
  *= require_self
  */
 #rescue {
-    text-align: left;
+    text-align: center;
+   
+    
   }
- 
   h1 {
       color: rgb(219, 13, 13);
       font-family: 'Courgette', cursive;
       
   }
   img {
-      border: 2px solid black;
-  }
+     
+      padding: 5px;
+       }
 #line {
     height: 2px;
     background-color: black;
@@ -47,9 +49,7 @@ text-align: left;
     text-align: left;
 }
 .container {
-  background: rgba(248, 245, 245, 0.096);
-  text-align: center;
-  border: 1px solid black;
+ text-align: center;
 }
 .pic{
     border: 1px solid black;
@@ -64,7 +64,7 @@ text-align: left;
     text-align: right;
     border: 2px solid black;
     background: black;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
 }
 #login{
@@ -80,9 +80,40 @@ text-align: left;
     text-align: center;
 }
 #logo {
-    color: white;
+    color: rgb(233, 24, 24);
 }
 .logo {
     text-align: left;
     font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+.petinfo {
+    font-size: 25px;
+}
+#image_id {
+    height: 350px;
+    width: 350px;
+    border: 2px solid black;
+}
+#resize{
+    height:35px;
+    width: 35px;
+}
+#mainlogo {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 37%;
+    left: 44%;
+    margin-left: -(X/2)px;
+    margin-top: -(Y/2)px;
+}
+.petinfo {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.list{
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }

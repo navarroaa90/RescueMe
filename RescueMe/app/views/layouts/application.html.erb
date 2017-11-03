@@ -10,11 +10,10 @@
    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
-  <body>
+<body>
  <nav class= "navigation">
  <div class= "logo">
-  <p id="logo">RescueMe <%= image_tag "dog-paw.png" %><p>
+  <p id="logo">RescueMe <span class= "paw"><%= image_tag "wheewhoo.png", id:"resize" %></span></p>
   </div>
   <% if current_user %>
     Welcome, <%= current_user.first_name %>
