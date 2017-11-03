@@ -27,9 +27,11 @@
   </ul>
 
   <h2>Getting Started</h2>
-  https://github.com/navarroaa90/RescueMe
-  https://fast-scrubland-79891.herokuapp.com
-  https://trello.com/b/1mpFu7vM/rescueme
+ https://github.com/navarroaa90/RescueMe
+ 
+ https://fast-scrubland-79891.herokuapp.com
+ 
+ https://trello.com/b/1mpFu7vM/rescueme
 
  <h2>Future Steps</h2>
 <ul>
