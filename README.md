@@ -4,12 +4,18 @@
  RescueMe is an app for people to post pets in need of adoption. Users are able to create an account and post information about the pet they want to put up for adoption. Its very simple and easy to use!
 
  <h2>Screenshots</h2>
-![alt tag](https://i.imgur.com/7PuUxlm.jpg)
+ 
+ ![alt tag](https://i.imgur.com/7PuUxlm.jpg)
+
 ![alt tag](https://i.imgur.com/gWgNRWM.jpg)
-![alt tag](https://i.imgur.com/7PfSMKM.png)
-![alt tag](https://i.imgur.com/daGDq5Z.png)
-![alt tag](https://i.imgur.com/EpmPK0D.png)
-![alt tag](https://i.imgur.com/RzSFdDX.png)
+ 
+ ![alt tag](https://i.imgur.com/7PfSMKM.png)
+ 
+ ![alt tag](https://i.imgur.com/daGDq5Z.png)
+ 
+ ![alt tag](https://i.imgur.com/EpmPK0D.png)
+ 
+ ![alt tag](https://i.imgur.com/RzSFdDX.png)
     
     
  <h2>Technologies Used</h2>
