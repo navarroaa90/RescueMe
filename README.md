@@ -1,7 +1,7 @@
 # RescueMe
 
  # Overview
- RescueMe is an app for people to post pets in need of adoption. Users are able to create an account and post information about the pet they want to put up for adoption. Its very simple and easy to use!
+ RescueMe is a web app for the people to post pets in need of adoption. Users are able to create an account and post information about the pet they want to put up for adoption. Its very simple and easy to use!
 
  <h2>Screenshots</h2>
  
