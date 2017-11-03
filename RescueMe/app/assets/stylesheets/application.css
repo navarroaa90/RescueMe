@@ -13,107 +13,103 @@
  *= require_tree .
  *= require_self
  */
-#rescue {
-    text-align: center;
-   
-    
-  }
-  h1 {
-      color: rgb(219, 13, 13);
-      font-family: 'Courgette', cursive;
-      
-  }
-  img {
-     
-      padding: 5px;
-       }
+ #rescue {
+	text-align: center;
+}
+h1 {
+	color: rgb(219, 13, 13);
+	font-family: 'Courgette', cursive;
+}
+img {
+	padding: 5px;
+}
 #line {
-    height: 2px;
-    background-color: black;
+	height: 2px;
+	background-color: black;
 }
 body, html {
-    margin: 0;
-    height: 100%;
+	margin: 0;
+	height: 100%;
 }
 .bg {
-    background-image: url("https://wallpaperscraft.com/image/labrador_retriever_foliage_autumn_dog_pumpkin_puppy_31714_2048x1152.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-#comments, #commentbtn {
-text-align: left;
+	background-image: url("https://wallpaperscraft.com/image/labrador_retriever_foliage_autumn_dog_pumpkin_puppy_31714_2048x1152.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.comments{
-    text-align: left;
+#comments, #commentbtn {
+	text-align: left;
+}
+.comments {
+	text-align: left;
 }
 .container {
- text-align: center;
+	text-align: center;
 }
-.pic{
-    border: 1px solid black;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 18px;
+.pic {
+	border: 1px solid black;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 18px;
 }
-.navigation{
-    border-radius: 0px;
-    height: 70px;
-    color: white;
-    text-align: right;
-    border: 2px solid black;
-    background: black;
-    font-size: 18px;
-    font-family: 'Lato', sans-serif;
+.navigation {
+	border-radius: 0px;
+	height: 70px;
+	color: white;
+	text-align: right;
+	border: 2px solid black;
+	background: black;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
 }
-#login{
-    text-align: center;
+#login {
+	text-align: center;
 }
-#loginbtn{
-    text-align: center;
-    color: green;
+#loginbtn {
+	text-align: center;
+	color: green;
 }
 #loginpage {
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: center;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-align: center;
 }
 #logo {
-    color: rgb(233, 24, 24);
+	color: rgb(233, 24, 24);
 }
 .logo {
-    text-align: left;
-    font-family: 'Courgette', cursive;
-    font-size: 20px;
+	text-align: left;
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
 }
 .petinfo {
-    font-size: 25px;
+	font-size: 25px;
 }
 #image_id {
-    height: 350px;
-    width: 350px;
-    border: 2px solid black;
+	height: 350px;
+	width: 350px;
+	border: 2px solid black;
 }
-#resize{
-    height:35px;
-    width: 35px;
+#resize {
+	height: 35px;
+	width: 35px;
 }
 #mainlogo {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    top: 37%;
-    left: 44%;
-    margin-left: -(X/2)px;
-    margin-top: -(Y/2)px;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: 37%;
+	left: 44%;
+	margin-left: -(X/2)px;
+	margin-top: -(Y/2)px;
 }
 .petinfo {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
 }
-.list{
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
+.list {
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
 }

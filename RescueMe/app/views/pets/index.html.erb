@@ -1,17 +1,18 @@
-<div class="container-fluid">
-    <div class="list">
-     <h1> List of Adoptions </h1>
-     <div id="line" class="container">
-</div> <br>
-<p><%= link_to 'Post Adoption', 'pets/new'%> </p>
-     <body>
-    <ul> 
-        <% @pets.each do |pet| %>
-            <li>
-                 <strong> <%= link_to(pet.pet_name, pet_path(pet.id))%> </strong> - <%= pet.breed %>
-         </li>
-        <% end %>
-     </ul>
-    </body>
-    </div> 
-</div>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="list">
+			<h1>List of Adoptions</h1>
+			<div class="container" id="line"></div><br>
+			<p><%= link_to 'Post Adoption', 'pets/new'%></p>
+			<ul>
+				<%@pets.each do |pet| %>
+				<li><strong><%= link_to(pet.pet_name, pet_path(pet.id))%></strong> - <%= pet.breed %></li><%end %>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
