@@ -16,8 +16,8 @@
     <div class= "petinfo">
     <p> <strong>Breed:</strong> <%= @pet.breed%> <br> <strong>Gender:</strong> <%= @pet.gender %><br> <strong>Age:</strong> <%= @pet.age %> years<br> 
     <strong>Weight:</strong> <%= @pet.weight %>lbs </p> 
-        <p> <strong>personality:</strong> <%= @pet.personality %> </p>
-        <p> <strong>contact and location information:</strong> <%= @pet.info %> </p>
+        <p> <strong>Personality: </strong> <%= @pet.personality %> </p>
+        <p> <strong>Contact and location information: </strong> <%= @pet.info %> </p>
         </div>
     <div>
 <%= link_to 'Edit', edit_pet_path(@pet) if @pet.user == current_user %> 
