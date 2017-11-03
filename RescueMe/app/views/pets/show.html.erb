@@ -1,6 +1,6 @@
 
 <div id= "show" class= "container">
-<h1> <%= @pet.pet_name %> </h1>
+    <h1> <%= @pet.pet_name %> </h1>
 </div>
 <div id="line" class="container">
 </div>
@@ -11,7 +11,7 @@
     <div class = "resize">
     <%= image_tag @pet.image.url, id: 'image_id' %>
     </div>
-    </div>
+ </div>
     
     <div class= "petinfo">
     <p> <strong>Breed:</strong> <%= @pet.breed%> <br> <strong>Gender:</strong> <%= @pet.gender %><br> <strong>Age:</strong> <%= @pet.age %> years<br> 

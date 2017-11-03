@@ -16,8 +16,7 @@ def create
 end
 
 private
-
-    #strong params
+  #strong params
     def user_params
         params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
     end

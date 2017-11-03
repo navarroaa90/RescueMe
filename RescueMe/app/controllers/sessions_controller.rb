@@ -5,18 +5,12 @@ class SessionsController < ApplicationController
    end
    
    def create
-   #Not using an instance variable since
-   #we're not providing the user to a view
    user = User.find_by(email: params[:email])
-   #taking advantage of the && logical operator's
-   # short-circuiting
-   if user && user.authenticate(params[:password])
-       #sucessful log in
+   
+if user && user.authenticate(params[:password])
        session[:user_id] = user.id
        redirect_to pets_path, notice: 'Logged in!'
    else
-       #flahs.now is used for messaging
-       #during the CURRENT request
        flash.now.alert = 'Invalid login credentials - try again!'
        render :new
    end
